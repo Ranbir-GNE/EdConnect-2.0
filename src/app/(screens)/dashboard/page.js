@@ -1,19 +1,34 @@
-"use client"
-import { About } from "@/app/components/about_us";
 import Navigation from "@/app/components/navbar";
-import ReputationCards from "@/app/components/reputation_cards";
-import ServiceCards from "@/app/components/service_cards";
-import Welcome from "@/app/components/welcome";
+import "../../../../public/sass/dashboard/profile.scss";
+import Image from "next/image";
+import Sidebar from "@/app/components/sidebar";
+import Calender from "@/app/components/calender";
 
 const Dashboard = () => {
   return (
-    <>
-      <Navigation />
-      <Welcome/>
-      <ReputationCards/>
-      <About />
-      <ServiceCards/>
-    </>
+    <div className="dashboard_section explore_section">
+      <div className="background_image">
+        <Image
+          src="/images/background.png"
+          alt="background_image"
+          width={2160}
+          height={1411}
+          priority
+        />
+      </div>
+      <Navigation fixed="top" />
+
+      <div className="inner_section">
+        <div className="left_section">
+          <Sidebar />
+        </div>
+        <div className="right_section">
+          <div className="explore_area">
+            <Calender/>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 export default Dashboard;

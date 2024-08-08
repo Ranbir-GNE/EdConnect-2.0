@@ -1,8 +1,8 @@
 import Navigation from "@/app/components/navbar";
-import Sidebar from "@/app/components/sidebar";
 import "../../../../public/sass/dashboard/profile.scss";
-import ProfileView from "@/app/components/profileview";
 import Image from "next/image";
+import Sidebar from "@/app/components/sidebar";
+// import ProfileView from "@/app/components/profileview";
 
 const Profile = () => {
   return (
@@ -24,7 +24,7 @@ const Profile = () => {
         </div>
         <div className="right_section">
           <div className="explore_area">
-            <ProfileView />
+            {/* <ProfileView /> */}
           </div>
         </div>
       </div>
