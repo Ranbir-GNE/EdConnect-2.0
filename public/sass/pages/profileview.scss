@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile_outer_container {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .background_image {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 10px;
+        z-index: -1;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .profile_container,
+    .profile_container_top {
+
+        .profile_content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #fff3;
+            background-color: rgba(108, 122, 137, 0.45);
+            backdrop-filter: blur(100px);
+            padding: 15px 15px;
+            border-radius: 10px;
+            color: #fff;
+
+            .profile_image {
+                height: 160px;
+                width: 160px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+
+            h2 {
+                // font-family: Roboto;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 20px;
+            }
+
+            p {
+                // font-family: Roboto;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                // text-align: left;
+            }
+        }
+
+
+        .profile_details {
+            border: 2px solid #fff3;
+            background-color: rgba(108, 122, 137, 0.45);
+            backdrop-filter: blur(100px);
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .student_details {
+            border: 2px solid #fff3;
+            padding: 15px 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-color: rgba(108, 122, 137, 0.45);
+            backdrop-filter: blur(80px);
+            color: #fff;
+
+            &:hover {
+                transform: scale(.98);
+                transition: ease-in-out 0.3s
+            }
+
+            h2 {
+                // font-family: Roboto;
+                font-size: 24px;
+                font-weight: 00;
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 20px;
+                ;
+            }
+
+            p {
+                // font-family: Roboto;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .profile_container_top {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1920px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1300px) and (max-width: 1399px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1200px) and (max-width: 1299px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .profile_outer_container {
+        .profile_container_top {
+            flex-direction: row;
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .profile_outer_container {
+        .profile_container_top {
+            flex-direction: row;
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .profile_outer_container {
+        .profile_container_top {
+            flex-direction: row;
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .profile_outer_container {
+        .profile_container_top {
+            flex-direction: row;
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    .profile_outer_container {
+        .profile_container_top {
+            flex-direction: row;
+        }
+    }
+}
