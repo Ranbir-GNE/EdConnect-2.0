@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.timetable-container {
+    width: 100%;
+    margin: 0 auto;
+    width: 685px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(108, 122, 137, 0.45);
+    backdrop-filter: blur(50px);
+
+    .timetable-header {
+        text-align: center;
+        margin-bottom: 10px;
+        
+        h1 {
+            font-size: 24px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+
+    .timetable-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 5px;
+            text-align: center;
+            font-size: 16px;
+
+            &:first-child {
+                font-weight: bold;
+            }
+        }
+
+        th {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+    }
+
+    .font-medium {
+        font-weight: 500;
+    }
+}

@@ -3,6 +3,7 @@ import "../../../../public/sass/dashboard/profile.scss";
 import Image from "next/image";
 import Sidebar from "@/app/components/sidebar";
 import Calender from "@/app/components/calender";
+import TimeTable from "@/app/components/timetable";
 
 const Dashboard = () => {
   return (
@@ -24,7 +25,13 @@ const Dashboard = () => {
         </div>
         <div className="right_section">
           <div className="explore_area">
-            <Calender/>
+            <div className="header_dashboard_area">
+              <Calender />
+              <TimeTable />
+            </div>
+          </div>
+          <div className="notification_area">
+            
           </div>
         </div>
       </div>

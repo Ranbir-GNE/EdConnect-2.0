@@ -24,7 +24,8 @@ const Profile = () => {
         </div>
         <div className="right_section">
           <div className="explore_area">
-            {/* <ProfileView /> */}
+           <div className="notification_area">
+            
           </div>
         </div>
       </div>
