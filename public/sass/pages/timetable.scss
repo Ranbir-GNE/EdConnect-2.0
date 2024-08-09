@@ -7,8 +7,8 @@
 .timetable-container {
     width: 100%;
     margin: 0 auto;
-    width: 685px;
-    padding: 5px;
+    width: 490px;
+    padding: 7px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: rgba(108, 122, 137, 0.45);
@@ -19,9 +19,9 @@
         margin-bottom: 10px;
         
         h1 {
-            font-size: 24px;
+            font-size: 20px;
             color: #ffffff;
-            font-weight: bold;
+            font-weight: 600;
         }
     }
 
@@ -34,11 +34,9 @@
             border: 1px solid #ddd;
             padding: 5px;
             text-align: center;
-            font-size: 16px;
-
-            &:first-child {
-                font-weight: bold;
-            }
+            font-size: 12px;
+            width: 75px;
+            height: 30px;
         }
 
         th {
@@ -53,9 +51,5 @@
         tbody tr:nth-child(even) {
             background-color: #ffffff;
         }
-    }
-
-    .font-medium {
-        font-weight: 500;
     }
 }

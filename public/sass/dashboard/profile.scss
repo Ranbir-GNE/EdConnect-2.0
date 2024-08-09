@@ -34,15 +34,23 @@
                 .explore_area {
                     width: 100%;
 
+                    .right_explore_area {
+                        width: 150px;
+                        float: right;
+                    }
+
+                    .left_explore_area {
+                        display: flex;
+                        flex-flow: column;
+                        width: calc(100% - 250px);
+                        padding: 26px 24px 0px 24px;
+                        gap: 16px;
+                        width: calc(100% - 200px);
+                        float: left;
+                    }
+
                 }
 
-                .notification_area {
-                    display: flex;
-                    width: calc(100% - 150px);
-                    padding: 26px 24px 0px 24px;
-                    gap: 16px;
-                    float: left;
-                }
 
                 .header_dashboard_area {
                     display: inline-flex;
@@ -78,24 +86,55 @@
 
 /* Extra Huge large desktops */
 @media (min-width: 1600px) and (max-width: 1679px) {
-    // .dashboard_section {
-    //     &.explore_section {
-    //       .inner_section {
-    //         .right_section {
-    //           width: calc(100% - 414px);
-    //           margin-top: 26px;
-    //           padding: 0 26px;
-    //           .css-1oqqzyl-MuiContainer-root{
-    //               margin-left: 0px;
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
+    .dashboard_section {
+        .inner_section {
+            .left_section {
+                width: 210px;
+            }
+        }
+
+        &.explore_section {
+            .inner_section {
+                .right_section {
+                    width: 100%;
+
+                    .explore_area {
+                        .right_explore_area {
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 /* Extra large desktops and mac laptops*/
-@media (min-width: 1400px) and (max-width: 1599px) {}
+@media (min-width: 1400px) and (max-width: 1599px) {
+    .dashboard_section {
+        .inner_section {
+            .left_section {
+                width: 210px;
+            }
+        }
+
+        &.explore_section {
+            .inner_section {
+                .right_section {
+                    width: 100%;
+
+                    .explore_area {
+                        .right_explore_area {
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
 
 /* Extra large desktops and mac laptops*/
 @media (min-width: 1300px) and (max-width: 1399px) {
@@ -110,6 +149,13 @@
             .inner_section {
                 .right_section {
                     width: 100%;
+
+                    .explore_area {
+                        .right_explore_area {
+                            display: none;
+                        }
+                    }
+
                 }
             }
         }
@@ -129,6 +175,12 @@
             .inner_section {
                 .right_section {
                     width: 100%;
+
+                    .explore_area {
+                        .right_explore_area {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -148,6 +200,12 @@
             .inner_section {
                 .right_section {
                     width: 100%;
+
+                    .explore_area {
+                        .right_explore_area {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -167,8 +225,14 @@
             .inner_section {
                 .right_section {
                     padding: 20px 18px 0px 18px;
-                    width: 100%;
                     gap: 12px;
+                    width: 100%;
+
+                    .explore_area {
+                        .right_explore_area {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -181,9 +245,15 @@
         &.explore_section {
             .inner_section {
                 .right_section {
-                    width: 100%;
                     padding: 20px 18px 0px 18px;
                     gap: 0px;
+                    width: 100%;
+
+                    .explore_area {
+                        .right_explore_area {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -196,12 +266,14 @@
         &.explore_section {
             .inner_section {
                 .right_section {
-                    width: 100%;
                     padding: 20px 18px 0px 18px;
                     gap: 0px;
+                    width: 100%;
 
-                    &.post_section {
-                        padding: 14px 12px 0px 12px;
+                    .explore_area {
+                        .right_explore_area {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -215,9 +287,15 @@
         &.explore_section {
             .inner_section {
                 .right_section {
-                    width: 100%;
                     padding: 14px 12px 0px 12px;
                     gap: 0px;
+                    width: 100%;
+
+                    .explore_area {
+                        .right_explore_area {
+                            display: none;
+                        }
+                    }
                 }
             }
         }

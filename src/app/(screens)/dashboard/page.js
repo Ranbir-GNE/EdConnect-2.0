@@ -2,8 +2,8 @@ import Navigation from "@/app/components/navbar";
 import "../../../../public/sass/dashboard/profile.scss";
 import Image from "next/image";
 import Sidebar from "@/app/components/sidebar";
-import Calender from "@/app/components/calender";
-import TimeTable from "@/app/components/timetable";
+import StudentDashboard from "./explore/page";
+
 
 const Dashboard = () => {
   return (
@@ -25,13 +25,11 @@ const Dashboard = () => {
         </div>
         <div className="right_section">
           <div className="explore_area">
-            <div className="header_dashboard_area">
-              <Calender />
-              <TimeTable />
+            <div className="left_explore_area">
+              <StudentDashboard/>
             </div>
-          </div>
-          <div className="notification_area">
-            
+            <div className="right_explore_area">
+            </div>
           </div>
         </div>
       </div>

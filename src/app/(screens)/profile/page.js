@@ -2,7 +2,6 @@ import Navigation from "@/app/components/navbar";
 import "../../../../public/sass/dashboard/profile.scss";
 import Image from "next/image";
 import Sidebar from "@/app/components/sidebar";
-// import ProfileView from "@/app/components/profileview";
 
 const Profile = () => {
   return (
@@ -21,11 +20,18 @@ const Profile = () => {
       <div className="inner_section">
         <div className="left_section">
           <Sidebar />
-        </div>
+        </div> 
+        {/* //correct */}
+
         <div className="right_section">
           <div className="explore_area">
-           <div className="notification_area">
-            
+            <div className="left_explore_area">
+              <Calender />
+              <TimeTable />
+            </div>
+            <div className="right_explore_area">
+              <Sidebar />
+            </div>
           </div>
         </div>
       </div>

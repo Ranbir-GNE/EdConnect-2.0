@@ -1,12 +1,25 @@
-import Navigation from "@/app/components/navbar";
-// import Profile from "@/app/components/profileview";
+import { Col, Container, Row } from "react-bootstrap";
 import "../../../../../public/sass/dashboard/profile.scss";
-import Image from "next/image";
-import Sidebar from "@/app/components/sidebar";
+import Calender from "@/app/components/calender";
+import TimeTable from "@/app/components/timetable";
 
-const Explore = () => {
+const StudentDashboard = () => {
   return (
-    <></>
+    <div className="student_daashboard_container">
+      <Container>
+        <Row>
+          <Col xxl={4} xl={4} lg={6} md={6} sm={12} xs={12}>
+            <Calender />
+          </Col>
+          <Col xxl={4} xl={4} lg={6} md={6} sm={12} xs={12}>
+            <TimeTable />
+          </Col>
+          <Col xxl={4} xl={4} lg={6} md={6} sm={12} xs={12}>
+            <Calender />
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
-export default Explore;
+export default StudentDashboard;

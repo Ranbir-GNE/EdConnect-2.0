@@ -17,64 +17,46 @@ const Sidebar = () => {
       <div className="sidebar_main_menu">
         <ul>
           <li>
-            <Link href="#">Dashboard</Link>
-          </li>
-          <li>
-            <Link href="#">Event Calender</Link>
-          </li>
-          <li>
-            <Link href="#">Online Session</Link>
-          </li>
-          <li>
-            <Link href="#">Chat App</Link>
-          </li>
-          <li>
-            <Link href="#">My Account</Link>
-          </li>
-          <li>
-            <Link href="#">Settings</Link>
-          </li>
-          <li>
-            <Link href="#">Logout</Link>
-          </li>
-        </ul>
-      </div>
-
-      <div className="sidebar_responsive_menu">
-        <ul>
-          <li>
             <Link href="#">
+              {" "}
               <MdDashboard />
+              Dashboard
             </Link>
           </li>
           <li>
             <Link href="#">
-              <FaCalendarAlt />{" "}
+              <FaCalendarAlt />
+              Event Calender
             </Link>
           </li>
           <li>
             <Link href="#">
               <MdOutlineVideoChat />
+              Online Session
             </Link>
           </li>
           <li>
             <Link href="#">
               <FaComments />
+              Chat App
             </Link>
           </li>
           <li>
             <Link href="#">
               <CgProfile />
+              My Account
             </Link>
           </li>
           <li>
             <Link href="#">
               <FaGears />
+              Settings
             </Link>
           </li>
           <li>
             <Link href="#">
               <TbLogout />
+              Logout
             </Link>
           </li>
         </ul>
