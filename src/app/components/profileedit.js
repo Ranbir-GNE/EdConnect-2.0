@@ -1,20 +1,72 @@
 import React from "react";
 
-const ProfileEdit = () => {
+const NotificationArea = () => {
   return (
-    <div className="profile_edit_outer_container">
-      <Container>
-        <Row>
-          <Col xxl={4} xl={4} lg={4} md={12} sm={12} xs={12}>
-            
-          </Col>
-          <Col xxl={4} xl={4} lg={4} md={4} sm={6} xs={12}>
-              
-          </Col>
-        </Row>
-      </Container>
+    <div className="notofication_outer_container">
+      <div className="notification_container">
+        <div className="notification_title">
+          <h2>Notification</h2>
+        </div>
+        <div className="notification_area">
+          <div className="notification_card">
+            <div className="notification_card_left">
+              <img src="/images/teacher.png" alt="teacher" />
+            </div>
+            <div className="notification_card_right">
+              <h3>Teacher Name</h3>
+              <p>Class Name</p>
+              <p>Subject Name</p>
+              <p>Time</p>
+            </div>
+          </div>
+          <div className="notification_card">
+            <div className="notification_card_left">
+              <img src="/images/teacher.png" alt="teacher" />
+            </div>
+            <div className="notification_card_right">
+              <h3>Teacher Name</h3>
+              <p>Class Name</p>
+              <p>Subject Name</p>
+              <p>Time</p>
+            </div>
+          </div>
+          <div className="notification_card">
+            <div className="notification_card_left">
+              <img src="/images/teacher.png" alt="teacher" />
+            </div>
+            <div className="notification_card_right">
+              <h3>Teacher Name</h3>
+              <p>Class Name</p>
+              <p>Subject Name</p>
+              <p>Time</p>
+            </div>
+          </div>
+          <div className="notification_card">
+            <div className="notification_card_left">
+              <img src="/images/teacher.png" alt="teacher" />
+            </div>
+            <div className="notification_card_right">
+              <h3>Teacher Name</h3>
+              <p>Class Name</p>
+              <p>Subject Name</p>
+              <p>Time</p>
+            </div>
+          </div>
+          <div className="notification_card">
+            <div className="notification_card_left">
+              <img src="/images/teacher.png" alt="teacher" />
+            </div>
+            <div className="notification_card_right">
+              <h3>Teacher Name</h3>
+              <p>Class Name</p>
+              <p>Subject Name</p>
+              <p>Time</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default ProfileEdit;
+export default NotificationArea;

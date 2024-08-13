@@ -5,6 +5,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
 export default function Home() {
   return (
     <>
+    
     </>
   );
 }

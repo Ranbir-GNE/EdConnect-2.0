@@ -1,8 +1,10 @@
 import Navigation from "@/app/components/navbar";
-// import Profile from "@/app/components/profileview";
 import "../../../../../public/sass/dashboard/profile.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "next/image";
 import Sidebar from "@/app/components/sidebar";
+import "../../../../../public/sass/pages/profileedit.scss"
+import ProfileEditForm from "./form";
 
 const ProfileEdit = () => {
   return (
@@ -24,7 +26,10 @@ const ProfileEdit = () => {
         </div>
         <div className="right_section">
           <div className="explore_area">
-            {/* <ProfileView /> */}
+            <div className="left_explore_area">
+              <ProfileEditForm />
+            </div>
+            <div className="right_explore_area"></div>
           </div>
         </div>
       </div>

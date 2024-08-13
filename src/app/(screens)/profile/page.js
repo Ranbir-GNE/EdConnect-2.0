@@ -1,37 +1,24 @@
 import Navigation from "@/app/components/navbar";
 import "../../../../public/sass/dashboard/profile.scss";
-import Image from "next/image";
 import Sidebar from "@/app/components/sidebar";
+import ProfileView from "@/app/components/profileview";
+import NotificationArea from "@/app/components/notification_area";
 
 const Profile = () => {
   return (
     <div className="dashboard_section explore_section">
-      <div className="background_image">
-        <Image
-          src="/images/background.png"
-          alt="background_image"
-          width={2160}
-          height={1411}
-          priority
-        />
-      </div>
       <Navigation fixed="top" />
 
       <div className="inner_section">
         <div className="left_section">
           <Sidebar />
-        </div> 
-        {/* //correct */}
-
+        </div>
         <div className="right_section">
           <div className="explore_area">
-            <div className="left_explore_area">
-              <Calender />
-              <TimeTable />
-            </div>
-            <div className="right_explore_area">
-              <Sidebar />
-            </div>
+            <ProfileView />
+          </div>
+          <div className="suggestion_area">
+            <NotificationArea />
           </div>
         </div>
       </div>

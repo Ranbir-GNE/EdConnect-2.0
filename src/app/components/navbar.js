@@ -9,6 +9,16 @@ import { PiHamburgerBold } from "react-icons/pi";
 const Navigation = () => {
   const [show, setShow] = useState(false);
 
+  const navLinks = [
+    { href: "#", label: "Dashboard" },
+    { href: "#", label: "Event Calendar" },
+    { href: "#", label: "Online Session" },
+    { href: "#", label: "Chat App" },
+    { href: "#", label: "My Account" },
+    { href: "#", label: "Settings" },
+    { href: "#", label: "Logout" },
+  ];
+
   return (
     <div className="header_section">
       <Container>
@@ -25,60 +35,28 @@ const Navigation = () => {
               </div>
               <div className="navbar_links">
                 <ul>
-                  <li>
-                    <Link href="#">Dashboard</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Event Calender</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Online Session</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Chat App</Link>
-                  </li>
-                  <li>
-                    <Link href="#">My Account</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Settings</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Logout</Link>
-                  </li>
+                  {navLinks.map((link, index) => (
+                    <li key={index}>
+                      <Link href={link.href}>{link.label}</Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div
                 className="navbar_dropdown_icon"
                 onClick={() => setShow(true)}
               >
-                <PiHamburgerBold size={32}  />
+                <PiHamburgerBold size={32} />
               </div>
-              {show ? (
+              {show && (
                 <>
                   <div className="navbar_dropdown_menu">
                     <ul>
-                      <li>
-                        <Link href="#">Dashboard</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Event Calender</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Online Session</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Chat App</Link>
-                      </li>
-                      <li>
-                        <Link href="#">My Account</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Settings</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Logout</Link>
-                      </li>
+                      {navLinks.map((link, index) => (
+                        <li key={index}>
+                          <Link href={link.href}>{link.label}</Link>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   <div className="close_icon" onClick={() => setShow(false)}>
@@ -91,7 +69,7 @@ const Navigation = () => {
                     />
                   </div>
                 </>
-              ) : null}
+              )}
             </div>
           </Col>
         </Row>

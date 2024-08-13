@@ -3,6 +3,7 @@ import "../../../../public/sass/dashboard/profile.scss";
 import Image from "next/image";
 import Sidebar from "@/app/components/sidebar";
 import StudentDashboard from "./explore/page";
+import NotificationArea from "@/app/components/notification_area";
 
 
 const Dashboard = () => {

@@ -12,7 +12,8 @@
     background-color: rgba(108, 122, 137, 0.45);
     backdrop-filter: blur(50px);
 
-    .sidebar_main_menu {
+    .sidebar_main_menu,
+    .sidebar_responsive_menu {
         width: 250px;
 
         ul {
@@ -48,9 +49,10 @@
                 }
             }
         }
+    }
 
-
-
+    .sidebar_responsive_menu {
+        display: none;
     }
 }
 
@@ -64,28 +66,240 @@
 @media (min-width: 1600px) and (max-width: 1679px) {}
 
 /* Extra large desktops and mac laptops*/
-@media (min-width: 1400px) and (max-width: 1599px) {}
+@media (min-width: 1400px) and (max-width: 1599px) {
+    .outer_container_sidebar {
+        .sidebar_main_menu {
+            width: 200px;
+
+            ul {
+
+                margin-right: 10px;
+
+                li {
+                    padding: 10px;
+                    margin-bottom: 40px;
+                    // border-bottom: 1px solid #0c21c1;
+
+                    a {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Extra large desktops and mac laptops*/
-@media (min-width: 1300px) and (max-width: 1399px) {}
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .outer_container_sidebar {
+        .sidebar_main_menu {
+            width: 200px;
+
+            ul {
+
+                margin-right: 10px;
+
+                li {
+                    padding: 10px;
+                    margin-bottom: 40px;
+                    // border-bottom: 1px solid #0c21c1;
+
+                    a {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Extra large desktops and mac laptops*/
-@media (min-width: 1200px) and (max-width: 1299px) {}
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .outer_container_sidebar {
+        .sidebar_main_menu {
+            display: none;
+        }
+
+        .sidebar_responsive_menu {
+            width: 70px;
+            display: block;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    svg {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .outer_container_sidebar {
+        .sidebar_main_menu {
+            display: none;
+        }
+
+        .sidebar_responsive_menu {
+            width: 70px;
+            display: block;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    svg {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Landscape tablets and ipad */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    .outer_container_sidebar {
+        .sidebar_main_menu {
+            display: none;
+        }
+
+        .sidebar_responsive_menu {
+            width: 70px;
+            display: block;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    svg {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Landscape phones and portrait tablets */
-@media (min-width: 576px) and (max-width: 767px) {}
+@media (min-width: 576px) and (max-width: 767px) {
+    .outer_container_sidebar {
+        .sidebar_main_menu {
+            display: none;
+        }
+
+        .sidebar_responsive_menu {
+            width: 70px;
+            display: block;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    svg {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Landscape phones and portrait tablets */
-@media (min-width: 361px) and (max-width: 575px) {}
+@media (min-width: 361px) and (max-width: 575px) {
+    .outer_container_sidebar {
+        .sidebar_main_menu {
+            display: none;
+        }
+
+        .sidebar_responsive_menu {
+            width: 70px;
+            display: block;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    svg {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Smaller phones */
-@media (max-width: 360px) {}
+@media (max-width: 360px) {
+    .outer_container_sidebar {
+        .sidebar_main_menu {
+            display: none;
+        }
+
+        .sidebar_responsive_menu {
+            width: 70px;
+            display: block;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    svg {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Smaller phones */
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .outer_container_sidebar {
+        .sidebar_main_menu {
+            display: none;
+        }
+
+        .sidebar_responsive_menu {
+            width: 70px;
+            display: block;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    svg {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
