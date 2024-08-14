@@ -9,15 +9,6 @@ import ProfileEditForm from "./form";
 const ProfileEdit = () => {
   return (
     <div className="dashboard_section explore_section">
-      <div className="background_image">
-        <Image
-          src="/images/background.png"
-          alt="background_image"
-          width={2160}
-          height={1411}
-          priority
-        />
-      </div>
       <Navigation fixed="top" />
 
       <div className="inner_section">
@@ -26,10 +17,10 @@ const ProfileEdit = () => {
         </div>
         <div className="right_section">
           <div className="explore_area">
-            <div className="left_explore_area">
-              <ProfileEditForm />
-            </div>
-            <div className="right_explore_area"></div>
+            <ProfileView />
+          </div>
+          <div className="suggestion_area">
+            <ProfileEdit />
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import "../../../public/sass/pages/navbar.scss";
 import Link from "next/link";
 import { useState } from "react";
 import { PiHamburgerBold } from "react-icons/pi";
+import { ImCross } from "react-icons/im";
 
 const Navigation = () => {
   const [show, setShow] = useState(false);
@@ -60,13 +61,7 @@ const Navigation = () => {
                     </ul>
                   </div>
                   <div className="close_icon" onClick={() => setShow(false)}>
-                    <Image
-                      src="/images/close.svg"
-                      alt="close_icon"
-                      width={500}
-                      height={500}
-                      onClick={() => setShow(false)}
-                    />
+                    <ImCross size={26} />
                   </div>
                 </>
               )}
