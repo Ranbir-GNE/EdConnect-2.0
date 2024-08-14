@@ -1,3 +1,6 @@
+@import "../base/variable.scss";
+@import "../base/mixin.scss";
+F
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +12,9 @@
     margin: 0 auto;
     width: 490px;
     padding: 7px;
-    border: 1px solid #ddd;
+    border: 1px solid $text-boxes;
     border-radius: 8px;
-    background-color: rgba(108, 122, 137, 0.45);
+    background-color: $text-color;
     backdrop-filter: blur(50px);
 
     .timetable-header {
@@ -20,7 +23,7 @@
         
         h1 {
             font-size: 20px;
-            color: #ffffff;
+            color: $text-color-light;
             font-weight: 600;
         }
     }
@@ -31,7 +34,7 @@
 
         th,
         td {
-            border: 1px solid #ddd;
+            border: 1px solid $text-boxes;
             padding: 5px;
             text-align: center;
             font-size: 12px;
@@ -40,16 +43,16 @@
         }
 
         th {
-            background-color: #007bff;
-            color: #ffffff;
+            background-color: $accent-color;
+            color: $text-color-light;
         }
 
         tbody tr:nth-child(odd) {
-            background-color: #f2f2f2;
+            background-color: $text-color-light;
         }
 
         tbody tr:nth-child(even) {
-            background-color: #ffffff;
+            background-color: $primary-color-light;
         }
     }
 }

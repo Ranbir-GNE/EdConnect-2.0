@@ -57,8 +57,7 @@ const ProfileEditForm = () => {
                 </div>
               </form>
             </div>
-          </Accordion.Body>{" "}
-          <Accordion.Body></Accordion.Body>
+          </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
           <Accordion.Header>Academic Details</Accordion.Header>
@@ -86,7 +85,6 @@ const ProfileEditForm = () => {
               </form>
             </div>
           </Accordion.Body>{" "}
-          <Accordion.Body></Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="3">
           <Accordion.Header>Personal Information</Accordion.Header>
@@ -123,7 +121,6 @@ const ProfileEditForm = () => {
               </form>
             </div>
           </Accordion.Body>{" "}
-          <Accordion.Body></Accordion.Body>
         </Accordion.Item>
       </Accordion>
     </div>

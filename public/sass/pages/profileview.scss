@@ -84,10 +84,12 @@
             margin-bottom: 10px;
             background-color: $secondary-color;
             color: $text-color-light;
+            box-shadow: 0 4px 6px $box-shadow;
 
             &:hover {
                 transform: scale(.98);
-                transition: ease-in-out 0.3s
+                transition: ease-in-out 0.25s;
+                box-shadow: 0 4px 6px $box-shadow-hover;
             }
 
             h2 {
@@ -190,16 +192,141 @@
 }
 
 /* Landscape tablets and ipad */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    .profile_outer_container {
+
+        .profile_container,
+        .profile_container_top {
+            .profile_content {
+                .profile_image {
+                    height: 100px;
+                    width: 100px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .profile_details {
+                padding: 10px;
+            }
+        }
+    }
+}
 
 /* Landscape phones and portrait tablets */
-@media (min-width: 576px) and (max-width: 767px) {}
+@media (min-width: 576px) and (max-width: 767px) {
+    .profile_outer_container {
+
+        .profile_container,
+        .profile_container_top {
+            .profile_content {
+                .profile_image {
+                    height: 100px;
+                    width: 100px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .profile_details {
+                padding: 10px;
+            }
+        }
+    }
+}
 
 /* Landscape phones and portrait tablets */
-@media (min-width: 361px) and (max-width: 575px) {}
+@media (min-width: 361px) and (max-width: 575px) {
+    .profile_outer_container {
+
+        .profile_container,
+        .profile_container_top {
+            .profile_content {
+                .profile_image {
+                    height: 100px;
+                    width: 100px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .profile_details {
+                padding: 10px;
+            }
+        }
+    }
+}
 
 /* Smaller phones */
-@media (max-width: 360px) {}
+@media (max-width: 360px) {
+    .profile_outer_container {
+
+        .profile_container,
+        .profile_container_top {
+            .profile_content {
+                .profile_image {
+                    height: 100px;
+                    width: 100px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .profile_details {
+                padding: 10px;
+            }
+        }
+    }
+}
 
 /* Smaller phones */
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .profile_outer_container {
+
+        .profile_container,
+        .profile_container_top {
+            .profile_content {
+                .profile_image {
+                    height: 100px;
+                    width: 100px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .profile_details {
+                padding: 10px;
+            }
+        }
+    }
+}

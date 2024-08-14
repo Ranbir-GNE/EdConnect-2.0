@@ -7,6 +7,7 @@
 }
 
 .dashboard_section {
+
     .inner_section {
         .left_section {
             width: 260px;
@@ -25,10 +26,11 @@
 
                 .explore_area {
                     width: 100%;
-                    // &.scrollable {
-                    //   height: 100vh;
-                    //   overflow-y: scroll;
-                    // }
+
+                    &.scrollable {
+                        height: 100vh;
+                        overflow-y: scroll;
+                    }
                 }
 
                 .suggestion_area {

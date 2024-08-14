@@ -1,9 +1,9 @@
 import Navigation from "@/app/components/navbar";
 import "../../../../../public/sass/dashboard/profile.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Image from "next/image";
 import Sidebar from "@/app/components/sidebar";
-import "../../../../../public/sass/pages/profileedit.scss"
+import "../../../../../public/sass/pages/profileedit.scss";
+import NotificationArea from "@/app/components/notification_area";
 import ProfileEditForm from "./form";
 
 const ProfileEdit = () => {
@@ -17,10 +17,10 @@ const ProfileEdit = () => {
         </div>
         <div className="right_section">
           <div className="explore_area">
-            <ProfileView />
+            <ProfileEditForm />
           </div>
           <div className="suggestion_area">
-            <ProfileEdit />
+            <NotificationArea/>
           </div>
         </div>
       </div>

@@ -1,9 +1,20 @@
-$primary-color: #00a9ff; /* Vibrant Blue */
-$secondary-color: #3e4574; /* Deep Muted Blue */
-$background-color: #eeeeee; /* Light Gray */
-$text-color: #0e1752; /* Dark Navy */
-$text-color-light:#ededed;
-$accent-color: #ff0c3e; /* Bold Red */
-$text-boxes:#e1eaee;
+$primary-color: hsl(200, 100%, 66%);
+/* Vibrant Blue */
+$secondary-color: #3e4574;
+/* Deep Muted Blue */
+$background-color: #eeeeee;
+/* Light Gray */
+$text-color: #0e1752;
+/* Dark Navy */
+$text-color-light: #ededed;
+$accent-color: #ff0c3e;
+/* Bold Red */
+$text-boxes: #e1eaee;
 $box-shadow: #0000005d;
 $box-shadow-hover: #00000067;
+$primary-color-light: hsl(199, 91%, 91%);
+/* Vibrant Blue */
+$input-box: #ffffff;
+$button-submit: #26e926;
+$button-submit-hover: #26e926c0;
+

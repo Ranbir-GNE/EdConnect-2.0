@@ -3,6 +3,32 @@ import { Col, Container, Row } from "react-bootstrap";
 import "../../../public/sass/pages/profileview.scss";
 
 const ProfileView = () => {
+  const profileDetails = [
+    { label: "Age:", value: "" },
+    { label: "Status:", value: "Regular" },
+    { label: "Student:", value: "Day-Scholar" },
+  ];
+
+  const studentDetails = [
+    { title: "Student Details", details: ["URN", "CRN", "Batch", "Programme", "Branch", "Class", "Section", "Semester"] },
+    { title: "Academic Details", details: ["Attendance", "Current CGPA", "Last SGPA", "Mentoring Group", "Mentor Name", "Mentor Contact"] },
+  ];
+
+  const personalDetails = [
+    { title: "Personal Details", details: ["Email", "Contact", "Blood Group", "Medical Conditions", "Father's Name", "Father's Contact", "Mother's Name", "Mother's Contact", "Address"] },
+    {
+      title: "Contact Us",
+      details: [
+        "College Website",
+        "Address: Guru Nanak Dev Engineering College Gill Park, Gill Road, Ludhiana 141006, Punjab(India).",
+        "Phone No. 0161 5064501",
+        "Email: principal@gndec.ac.in",
+        "Academic/Admission:0161 5064704",
+        "Testing and Consultancy: 0161 5064709",
+      ],
+    },
+  ];
+
   return (
     <div className="profile_outer_container">
       <Container>
@@ -11,78 +37,38 @@ const ProfileView = () => {
             <div className="profile_container_top ">
               <div className="profile_content">
                 <div className="profile_image">
-                  <Image
-                    src="/images/person.jpg"
-                    alt="ProfileView"
-                    width={150}
-                    height={150}
-                  />
+                  <Image src="/images/person.jpg" alt="ProfileView" width={150} height={150} />
                 </div>
                 <h2>Alice</h2>
                 <p>Web Developer</p>
               </div>
               <div className="profile_details">
-                <p>Age:</p>
-                <p>Status: Regular</p>
-                <p>Student: Day-Scholar</p>
+                {profileDetails.map((detail, index) => (
+                  <p key={index}>{`${detail.label} ${detail.value}`}</p>
+                ))}
+              </div>
+              <div className="performance_calender">
+                
               </div>
             </div>
           </Col>
           <Col xxl={8} xl={8} lg={8} md={8} sm={12} xs={12}>
             <Container>
               <Row>
-                <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
-                  <div className="profile_container">
-                    <div className="student_details">
-                      <h2>Student Details</h2>
-                      <p>URN: </p>
-                      <p>CRN: </p>
-                      <p>Batch: </p>
-                      <p>Programme: </p>
-                      <p>Branch: </p>
-                      <p>Class: </p>
-                      <p>Section: </p>
-                      <p>Semester: </p>
+                {[studentDetails, personalDetails].map((detailGroup, colIndex) => (
+                  <Col key={colIndex} xxl={6} xl={6} lg={12} md={12} sm={12} xs={12}>
+                    <div className="profile_container">
+                      {detailGroup.map((section, sectionIndex) => (
+                        <div key={sectionIndex} className="student_details">
+                          <h2>{section.title}</h2>
+                          {section.details.map((item, itemIndex) => (
+                            <p key={itemIndex}>{item}</p>
+                          ))}
+                        </div>
+                      ))}
                     </div>
-                    <div className="student_details">
-                      <h2>Accademic Details</h2>
-                      <p>Attendance: </p>
-                      <p>Current CGPA: </p>
-                      <p>Last SGPA: </p>
-                      <p>Mentoring Group </p>
-                      <p>Mentor Name: </p>
-                      <p>Mentor Contact: </p>
-                    </div>
-                  </div>
-                </Col>
-                <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
-                  <div className="profile_container">
-                    <div className="student_details">
-                      <h2>Personal Details</h2>
-                      <p>Email: </p>
-                      <p>Contact: </p>
-                      <p>Blood Group:</p>
-                      <p>Medical Conditions:</p>
-                      <p>Father's Name: </p>
-                      <p>Father's Contact: </p>
-                      <p>Mother's Name: </p>
-                      <p>Mother's Contact: </p>
-                      <p>Address: </p>
-                    </div>
-                    <div className="student_details">
-                      <h2>Contact Us</h2>
-                      <p>College Website</p>
-                      <p>
-                        Address : Guru Nanak Dev Engineering College Gill Park,
-                        Gill Road, Ludhiana 141006, Punjab(India).
-                      </p>
-                      <p>Phone No. 0161 5064501</p>
-                      <p>Email: principal@gndec.ac.in</p>
-                      <p>Academic/Admission:0161 5064704</p>
-                      <p>Testing and Consultancy: 0161 5064709</p>
-                    </div>
-                  </div>
-                </Col>
+                  </Col>
+                ))}
               </Row>
             </Container>
           </Col>
