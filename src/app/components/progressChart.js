@@ -26,10 +26,10 @@ const options = {
   },
 };
 
-const AttendanceChart = () => {
+const ProgressChart = () => {
   return (
     <Chart
-      chartType="Bar"
+      chartType="Line"
       width="100%"
       height="400px"
       data={data}
@@ -38,4 +38,4 @@ const AttendanceChart = () => {
   );
 };
 
-export default AttendanceChart;
+export default ProgressChart;

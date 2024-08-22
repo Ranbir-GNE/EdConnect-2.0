@@ -1,0 +1,95 @@
+@import "../base/variable.scss";
+@import "../base/mixin.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todo_outer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $secondary-color;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px $box-shadow;
+
+    .todo_heading {
+        h1 {
+            font-size: 24px;
+            color: $text-color-light;
+            margin-bottom: 15px;
+        }
+    }
+
+    .todo_input_form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 16px;
+
+            &:focus {
+                border-color: $primary-color;
+                outline: none;
+            }
+        }
+
+        button {
+            padding: 8px;
+            background-color: $button-submit;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+
+            &:hover {
+                background-color: $button-submit-hover;
+            }
+        }
+    }
+
+    .todo_show_list {
+        width: 100%;
+
+        .todo_list_item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $text-boxes;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: $text-color;
+
+            &:hover {
+                background-color: #fff;
+            }
+
+            .todo_delete_button {
+                padding: 5px 10px;
+                background-color: $accent-color;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #c82333;
+                }
+            }
+        }
+    }
+}
