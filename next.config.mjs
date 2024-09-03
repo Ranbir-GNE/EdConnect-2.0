@@ -1,12 +1,4 @@
-import path from 'path';
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  
-
-  sassOptions: {
-    includePaths: [path.join(process.cwd(), './public/scss')],
-  },
-
-};
+const nextConfig = {};
 
 export default nextConfig;
